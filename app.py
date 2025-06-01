@@ -7,6 +7,10 @@ app = Flask(__name__)
 def home():
     return render_template('index.html', result=None)
 
+@app.route('/health', methods=['HEAD', 'GET', 'POST'])
+def get_health():
+    return {'msg': "API is healthy"}
+
 @app.route('/submit', methods=['POST', 'GET'])
 def data_entry():
     form_data = {}
