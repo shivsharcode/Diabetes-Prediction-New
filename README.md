@@ -12,7 +12,7 @@ This is a **Flask-based** web application that predicts whether a person is diab
 ## 🚀 Deployment
 
 **🌐 Deployed Project:**  
-🔗 [https://diabetes-prediction-new-uyn8.onrender.com](https://diabetes-predictor-5q7g.onrender.com/)
+🔗 [https://diabetes-prediction-new-uyn8.onrender.com](https://diabetes-prediction-new-uyn8.onrender.com)
 
 ## 📁 Project Structure
 
