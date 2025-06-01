@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+#header{
+    background-color: rgb(37, 155, 155);
+    height: 10vmin;
+    line-height: 10vmin;
+}
+
+#heading{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main{
+    display: flex;
+    /* justify-content: center; */
+}
+
+
+/* ....................................FORM................................... */
+#user_form{
+    border: 1px solid black;
+    margin: 10vmin;
+}
+
+.user_form_class {  
+    max-width: 600px;
+    width : 600px ;
+    /* margin: 0 auto; */
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    /* background-color: #f3e1d5; */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* .form-btn-class{
+    display: flex;
+    gap: 20px;
+
+}  */
+
+
+#submit-btn {
+    /* display: block; */
+    width: 75%; 
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-btn:hover {
+    background-color: #218838;
+}
+
+#reset-btn{
+    /* display: block; */
+    /* width: 45%; */
+    /* display: flex; */
+    width: 24%;
+    padding: 10px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    
+}
+
+#reset-btn:hover{
+    background-color: rgb(12, 16, 139);
+}
+
+#submit-btn,
+#reset-btn {
+    display: inline-flex; /* Change display to inline-flex */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ......................RESULT DIV......................................... */
+.result-div-class{
+    max-width: 600px;
+    width: 600px;
+    border: 1px solid black;
+    margin: 10vmin;
+    padding: 20px;
+    border-radius: 10px;
+    /* background-color: #2C6559; */
+    background-color: #3D8C87;
+}
+
+.result-div-class p{
+    text-align: center;
+    color: #2C6559;
+    font-weight:800;
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+    margin-top: 7%;
+}
+
+#resultdiv{
+    background-image: url(../images/FOURTH-DESIGN/startingPic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* ........................REFERENCE IMAGE..................................... */
+
+#describeRefImg{
+    height: 50vmin;
+    margin: 2%;
+    opacity: 0.4;
+    border: 0.5rem solid gray ;
+    transition: opacity 0.5s ease;
+    
+}
+
+#describeRefImg:hover{
+    cursor:not-allowed;
+    border-color: rgb(191, 191, 191);
+    transition-duration: 200ms  ;
+}
+
+#toggleButton {
+    /* position: absolute;
+    top: 50%;   
+   
+    padding: 10px 20px;
+    background-color: #F5AF00;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.5s ease; 
+    transition: filter; */
+
+    position: absolute;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+
+}
+#toggleButton:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+#toggleButton:active{
+    transform: scale(0.9);
+    filter: brightness(90%);
+}
+
+#toggleButton.hidden {
+    opacity: 0; 
+    pointer-events: none;
+}
+
+#describeRef{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px pink solid; */
+
+}
+
+
+/* .............................................................................................................. */
