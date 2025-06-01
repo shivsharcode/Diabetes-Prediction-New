@@ -1,3 +1,4 @@
+import os
 
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 from dbpred import diabetes_predictor
@@ -30,5 +31,8 @@ def data_entry():
         return render_template('index.html',  result=result)
     return redirect(url_for('home'))
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
+
